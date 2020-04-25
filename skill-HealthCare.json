@@ -1,0 +1,665 @@
+{
+  "intents": [
+    {
+      "intent": "Greetings",
+      "examples": [
+        {
+          "text": "Hi"
+        },
+        {
+          "text": "good after"
+        },
+        {
+          "text": "Good Afternoon"
+        },
+        {
+          "text": "Good Evening"
+        },
+        {
+          "text": "Good Night"
+        },
+        {
+          "text": "Good Morning"
+        },
+        {
+          "text": "Hey"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Covid-19Cases",
+      "examples": [
+        {
+          "text": "covid-19 or corona cases updates"
+        },
+        {
+          "text": "cases in India due to covid-19 or corona virus"
+        },
+        {
+          "text": "corona or covid-19 cases in andhra pradesh"
+        },
+        {
+          "text": "total cases in world due covid-19 or corona virus"
+        },
+        {
+          "text": "May I know how many cases in world due to covid-19"
+        },
+        {
+          "text": "corona or covid-19 cases in the world"
+        },
+        {
+          "text": "how many people cured from covid-19 or corona"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Queries",
+      "examples": [
+        {
+          "text": "How many deaths occurred due to corona in India?"
+        },
+        {
+          "text": "What is the treatment for the coronavirus disease."
+        },
+        {
+          "text": "What is social distancing?"
+        },
+        {
+          "text": "What is the incubation period of the coronavirus disease?"
+        },
+        {
+          "text": "Is the coronavirus disease airborne?"
+        },
+        {
+          "text": "Can you tell us the age of people affectedwith corona?"
+        },
+        {
+          "text": "What is the age of people mostly affected with corona ?"
+        },
+        {
+          "text": "To which age of people does corona affects fastly?"
+        },
+        {
+          "text": "How many corona virus cases are recognised in India."
+        },
+        {
+          "text": "how many deaths in world due to corona"
+        },
+        {
+          "text": "how many recovered from corona"
+        },
+        {
+          "text": "symptoms of covid-19 or corona virus or novel corona"
+        },
+        {
+          "text": "Precaustions for covid-19 or novel corona or corona virus"
+        },
+        {
+          "text": "What is covid-19 or corona virus or novel corona"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "Queries",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "What is social distancing?",
+          "synonyms": [
+            "what social distancing is",
+            "what is social distance"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "How many deaths occurred due to corona in India",
+          "synonyms": [
+            " Deaths in India due to corona"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "What is the treatment for the coronavirus disease.",
+          "synonyms": [
+            "Is any treament for covid-19 or corona",
+            "What treatment for covid-19",
+            "How we get treatment for covid-19"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "How many corona virus cases are recognised in India",
+          "synonyms": [
+            "Number of cases in India due to corona"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "What is the official name of the coronavirus disease?",
+          "synonyms": [
+            "official name for covid-19 or corona virus",
+            "is there any ooficial name for covid-19"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "symptoms of covid-19",
+          "synonyms": [
+            "What are the symptoms of or corona virus",
+            "symptoms of novel corona",
+            "how I find I have corona",
+            "symptoms for corona or covid-19"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "what are the precautions we should take against covid-19",
+          "synonyms": [
+            "remedies for covid-19 ",
+            "precautions for corona virus ",
+            "how we prevent corona virus",
+            "prvention for covid-19",
+            "treatment for covid-19"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "What is covid-19 or corona virus",
+          "synonyms": [
+            "what is Novel corona virus",
+            "what is corona virus",
+            "what novel corona is"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "To which age of people does corona affects fastly?",
+          "synonyms": [
+            "who will affect by corona mostly",
+            "In which age group corona or covid will spread fast",
+            "What is the age of people mostly affected with corona ?",
+            "Can you tell us the age of people affectedwith corona?"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "What is the incubation period of the coronavirus disease?",
+          "synonyms": [
+            "incubation period of corona or covid-19",
+            "how many days covid-19 or corona exist"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Is the coronavirus disease airborne?",
+          "synonyms": [
+            "how corona or covid-19 trafers"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "CovidCases",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "covid or corona cases in telangana or tamilnadu or karnataka",
+          "synonyms": [
+            "covid or corona cases in Mumbai or Delhi or Utterpradesh"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "covid-19 cases in india",
+          "synonyms": [
+            "covid cases in USA or America or Italy or China",
+            "Total covid cases in Europe or germany or russia"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "greetings",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Hi",
+          "synonyms": [
+            "Hey",
+            "Hai",
+            "Hello"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "greeting",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Goodnight",
+          "synonyms": [
+            "good night",
+            "bye,good night"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "good evening",
+          "synonyms": [
+            "Hi,Good evening",
+            "Goodevening"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "good morning",
+          "synonyms": [
+            "goodmorning",
+            "hi good morning",
+            "hi,Good Morning"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "good afternoon",
+          "synonyms": [
+            "Goodafternoon",
+            "Hi goodafternoon"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "webhooks": [
+    {
+      "url": "http://www.emro.who.int/health-topics/corona-virus/questions-and-answers.html",
+      "name": "main_webhook",
+      "headers": []
+    }
+  ],
+  "dialog_nodes": [
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Social distancing is a non-pharmaceutical infection prevention and control intervention implemented to avoid/decrease contact between those who are infected with a disease causing pathogen and those who are not, so as to stop or slow down the rate and extent of disease transmission in a community"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_6_1587746767845",
+      "conditions": "@Queries:(What is social distancing?)",
+      "dialog_node": "response_1_1587827009455",
+      "previous_sibling": "response_2_1587826051912"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "24942. You can get more information about cases in this link---https://www.worldometers.info/coronavirus/country/india/"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_6_1587746767845",
+      "conditions": "@Queries:(How many corona virus cases are recognised in India)",
+      "dialog_node": "response_9_1587827241303",
+      "previous_sibling": "response_6_1587827015160"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "The incubation period of the virus is the time between the exposure and the display of symptoms. Current information suggests that the incubation period ranges from 1 to 12.5 days (with median estimates of 5 to 6 days), but can be as long as 14 days."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_6_1587746767845",
+      "conditions": "@Queries:(What is the incubation period of the coronavirus disease?)",
+      "dialog_node": "response_4_1587826049129",
+      "previous_sibling": "response_4_1587825754854"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "780. You can get more information about cases in this link---https://www.worldometers.info/coronavirus/country/india/"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_6_1587746767845",
+      "conditions": "@Queries:(How many deaths occurred due to corona in India)",
+      "dialog_node": "response_5_1587827575663",
+      "previous_sibling": "response_9_1587827241303"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "People of all ages can be infected by the new coronavirus (2019-nCoV). Older people, and people with pre-existing medical conditions (such as asthma, diabetes, heart disease) appear to be more vulnerable to becoming severely ill with the virus.Children and old aged people are also mostly affected with corona becauseof less immunity power.  https://www.statnews.com/2020/03/03/who-is-getting-sick-and-how-sick-a-breakdown-of-coronavirus-risk-by-demographic-factors/"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_6_1587746767845",
+      "conditions": "@Queries:(To which age of people does corona affects fastly?)",
+      "dialog_node": "response_4_1587825754854",
+      "previous_sibling": "response_6_1587804051011"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Protect yourself and others around you by knowing the facts and taking appropriate precautions. Follow  advice provided by your local public health agency. To prevent the spread of COVID-19: 1.Clean your hands often. 2.Maintain social distance. 3. Don't touch your eyes, nose or mouth. 4. Finally, follow the directions of your local health authority.    https://www.google.com/search?q=precautions+for+covid-19&rlz=1C1PRFI_enIN882IN883&oq=precautions+for+covid-19&aqs=chrome..69i57.12449j1j7&sourceid=chrome&ie=UTF-8"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_6_1587746767845",
+      "conditions": "@Queries:(what are the precautions we should take against covid-19)",
+      "dialog_node": "response_6_1587804051011",
+      "previous_sibling": "response_7_1587803464104"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "No pharmaceutical products have yet been shown to be safe and effective for the treatment of COVID-19.   https://www.google.com/search?q=treatment+for+coronavirus&rlz=1C1PRFI_enIN882IN883&oq=treatment+for+coron&aqs=chrome.1.0l2j69i57j0l5.7509j1j7&sourceid=chrome&ie=UTF-8"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_6_1587746767845",
+      "conditions": "@Queries:(What is the treatment for the coronavirus disease.)",
+      "dialog_node": "response_6_1587827015160",
+      "previous_sibling": "response_10_1587827011970"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "ICTV announced “severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2)” as the name of the new virus on 11 February 2020"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_6_1587746767845",
+      "conditions": "@Queries:(What is the official name of the coronavirus disease?)",
+      "dialog_node": "response_10_1587827011970",
+      "previous_sibling": "response_1_1587827009455"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "The virus that causes COVID-19 is mainly transmitted through droplets generated when an infected person coughs, sneezes, or speaks. These droplets are too heavy to hang in the air. They quickly fall on floors or surfaces. You can be infected by breathing in the virus if you are within 1 metre of a person who has COVID-19, or by touching a contaminated surface and then touching your eyes, nose or mouth before washing your hands."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_6_1587746767845",
+      "conditions": "@Queries:(Is the coronavirus disease airborne?)",
+      "dialog_node": "response_2_1587826051912",
+      "previous_sibling": "response_4_1587826049129"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "COVID-19 or Novel Corona Virus is the infectious disease caused by the most recently discovered coronavirus. This new virus and disease were unknown before the outbreak began in Wuhan, China, in December 2019. COVID-19 is now a pandemic affecting many countries globally."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_6_1587746767845",
+      "conditions": "@Queries:(What is covid-19 or corona virus)",
+      "dialog_node": "response_7_1587803464104",
+      "previous_sibling": "response_10_1587803884791"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "The most common symptoms of COVID-19 or corona virus are fever, dry cough, and tiredness. Some patients may have aches and pains, nasal congestion, sore throat or diarrhea. These symptoms are usually mild and begin gradually.https://www.google.com/search?q=symptoms+for+coronavirus&rlz=1C1PRFI_enIN882IN883&oq=symptoms+for+&aqs=chrome.0.0j69i57j0l6.5536j0j7&sourceid=chrome&ie=UTF-8"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_6_1587746767845",
+      "conditions": "@Queries:(symptoms of covid-19)",
+      "dialog_node": "response_10_1587803884791"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Good Evening"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_6_1587724183567",
+      "conditions": "@greeting:(good evening)",
+      "dialog_node": "response_5_1587733439321",
+      "previous_sibling": "response_3_1587733397120"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Good Afternoon!"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_6_1587724183567",
+      "conditions": "@greeting:(good afternoon)",
+      "dialog_node": "response_3_1587733397120",
+      "previous_sibling": "response_1_1587732991174"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Good Night! Have a sweet dreams."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_6_1587724183567",
+      "conditions": "@greeting:Goodnight",
+      "dialog_node": "response_8_1587733469617",
+      "previous_sibling": "response_5_1587733439321"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Good Morning!"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_6_1587724183567",
+      "conditions": "@greeting:(good morning)",
+      "dialog_node": "response_1_1587732991174",
+      "previous_sibling": "response_6_1587732956656"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hi,How can I help you?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1587724183567",
+      "conditions": "@greetings",
+      "dialog_node": "response_6_1587732956656"
+    },
+    {
+      "type": "standard",
+      "title": "Greetings",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@greetings || @greeting",
+      "dialog_node": "node_6_1587724183567",
+      "previous_sibling": "node_2_1587828634070"
+    },
+    {
+      "type": "standard",
+      "title": "CovidCases",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Here is the Link go through for Updates of COVID-19.   https://www.worldometers.info/coronavirus/country/india/"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Covid-19Cases || @CovidCases",
+      "dialog_node": "node_2_1587828634070",
+      "previous_sibling": "node_6_1587746767845"
+    },
+    {
+      "type": "standard",
+      "title": "Queries",
+      "actions": [],
+      "metadata": {
+        "callout": {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "": ""
+          },
+          "result_variable": "webhook_result_1"
+        },
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@Queries",
+      "dialog_node": "node_6_1587746767845",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_6_1587724183567",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello. How can I help you?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "HealthCare",
+  "language": "en",
+  "description": ""
+}
